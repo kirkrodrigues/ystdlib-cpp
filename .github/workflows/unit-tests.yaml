@@ -53,8 +53,6 @@ jobs:
           "CC": "/opt/homebrew/opt/llvm@16/bin/clang",
           "CXX": "/opt/homebrew/opt/llvm@16/bin/clang++"
           }')
-          || fromJson('{}')
+          || {}
           }}
-        run: |-
-          printenv
-          task test-all
+        run: "task test-all"
