@@ -55,4 +55,6 @@ jobs:
           }')
           || fromJson('{}')
           }}
-        run: "task test-all"
+        run: |-
+          printenv
+          task test-all
